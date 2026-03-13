@@ -1,21 +1,79 @@
-Real Estate Market Analysis
+Real Estate Market Analysis Dashboard
+
+
+
+
+
+
+
+
+A comprehensive Real Estate Market Analysis project analyzing 3,000 property listings across 5 major cities representing $2.43B in market value.
+
+This project performs Exploratory Data Analysis (EDA), statistical modeling, market segmentation, and business insights generation for real estate investment and decision-making.
+
+Designed for:
+
+Data Analytics portfolios
+
+Business intelligence demonstrations
+
+Job interviews
+
+Real estate market insights
+
+Table of Contents
+
 Project Overview
 
-This project performs a comprehensive analysis of 3,000 real estate listings across 5 major cities and 5 states, representing approximately $2.43 billion in total market value.
+Dataset Summary
 
-The analysis includes:
+Key Business Insights
 
-Exploratory Data Analysis (EDA)
+Market Segmentation
 
-Statistical insights
+Visualizations
 
-Professional data visualizations
+Power BI Dashboard
 
-Business intelligence insights
+Project Structure
 
-Strategic recommendations
+Tech Stack
 
-The project is designed for data analytics portfolios, job interviews, and business presentations.
+Key Findings
+
+Business Impact
+
+Author
+
+Project Overview
+
+The objective of this project is to analyze large-scale real estate listings to identify:
+
+Property price trends
+
+Location-based pricing patterns
+
+Demand and sales velocity
+
+Market segmentation opportunities
+
+Investment insights
+
+The dataset contains 3,000 real estate listings covering multiple cities and states.
+
+Key analytical techniques used:
+
+Data cleaning and preprocessing
+
+Feature engineering
+
+Statistical analysis
+
+Correlation analysis
+
+Market segmentation
+
+Data visualization
 
 Dataset Summary
 Metric	Value
@@ -25,261 +83,84 @@ States	CA, IL, TX, NY, FL
 Total Market Value	~$2.43 Billion
 Average Price	$810,859
 Price Range	$100,283 – $1,499,473
-Data Quality	100% (No missing values, no duplicates)
-Project Deliverables
-Data Files
-df_clean.csv
-
-Cleaned dataset with numeric conversions.
-
-Contains
-
-Original dataset fields
-
-Numeric conversions for:
-
-Price
-
-Bedrooms
-
-Bathrooms
-
-Area
-
-Lot Size
-
-Shape
-
-3000 rows × 21 columns
-
-Purpose
-
-Foundation dataset used for all analysis.
-
-df_with_features.csv
-
-Enhanced dataset with engineered features.
-
-Additional Features
-
-Price_per_Sqft
-
-Decade
-
-Price_Segment
-
-Shape
-
-3000 rows × 23 columns
-
-Purpose
-
-Supports segmentation analysis and advanced insights.
-
-Visualizations
-Real Estate Dashboard
-
-File: 01_Real_Estate_Dashboard.png
-
-Resolution: 20 × 14 inches (200 DPI)
-
-Includes 12 visualizations
-
-Property Status Distribution (Pie Chart)
-
-Property Type Distribution (Bar Chart)
-
-Average Price by City
-
-Price Distribution Histogram
-
-Days on Market by Status (Box Plot)
-
-Average Price by Property Type
-
-Market Segmentation by Price
-
-Price vs Area Scatter Plot
-
-Days on Market by City
-
-Sell-Through Rate by Segment
-
-Feature Correlation Heatmap
-
-Listings by State
-
-Use Case
-
-Executive presentations and stakeholder dashboards.
-
-Detailed Market Analysis
-
-File: 02_Detailed_Market_Analysis.png
-
-Resolution: 16 × 12 inches (200 DPI)
-
-Includes 4 deep-dive visualizations
-
-City Market Overview (Price vs Days on Market)
-
-Property Type Bubble Chart
-
-Bedroom Price Analysis
-
-Property Status Comparison
-
-Use Case
-
-Market research and competitive analysis.
-
-Price Segmentation Analysis
-
-File: 03_Price_Segmentation_Analysis.png
-
-Resolution: 16 × 12 inches (200 DPI)
-
-Includes 4 segmentation visualizations
-
-Segment Volume vs Sales
-
-Price Distribution by Segment
-
-Segment Characteristics Comparison
-
-Segment Performance Metrics
-
-Use Case
-
-Investor presentations and market strategy analysis.
-
-Professional Report
-
-File: Real_Estate_Analysis_Report.docx
-
-A 15+ page business report containing:
-
-Executive Summary
-
-Data Quality & Methodology
-
-Market Overview
-
-Geographic Analysis
-
-Property Feature Analysis
-
-Market Segmentation Insights
-
-Business Insights
-
-Power BI Dashboard Architecture
-
-Strategic Recommendations
-
-Conclusion
-
-Use Case
-
-Client deliverables and professional reports.
-
+Data Quality	100% Clean
 Key Business Insights
 
-The analysis generated 16 major insights.
+The analysis generated 16 major market insights.
 
-Market Insights
+Market Behavior
 
-Real estate market shows balanced demand.
+The real estate market shows balanced demand across cities.
 
-Fresno has the highest average pricing.
+Fresno has the highest average property price.
 
-San Francisco properties sell fastest.
+San Francisco has the fastest property sales cycle.
 
 Property type demand is evenly distributed.
 
-Pricing is primarily driven by location.
+Pricing Drivers
 
-Sales Insights
+Traditional property features show very weak correlation with price:
 
-Luxury segment has the highest conversion rate.
-
-Budget segment maintains steady demand.
-
-Sold properties show a slight price premium.
-
-Price distribution is symmetric.
-
-Property Insights
-
-Homes built in the 1970s show premium pricing.
-
-Condos provide lower-cost entry points.
-
-Lot size has an inverse relation with price.
-
-Mid-range segment has fastest growth.
-
-Market Structure Insights
-
-City listing distribution is balanced.
-
-Price per square foot varies widely.
-
-Average selling cycle is predictable.
-
-Statistical Metrics
-Price Statistics
-Metric	Value
-Mean	$810,859
-Median	$815,630
-Standard Deviation	$399,732
-Price Range	$100,283 – $1,499,473
-Skewness	-0.0193
-Kurtosis	-1.17
-Gini Coefficient	0.2845
-Sales Activity
-Metric	Value
-Sell Through Rate	34.8%
-Pending Rate	33.3%
-For Sale	31.9%
-Avg Days on Market	61.2 days
-Median DOM	62 days
-
-Fastest Market: San Francisco (59.5 days)
-Slowest Market: San Diego (62.5 days)
-
-Feature Correlation with Price
 Feature	Correlation
-Bathrooms	+0.0095
+Bathrooms	0.0095
 Bedrooms	-0.0215
 Area	-0.0321
 Lot Size	-0.0436
-Days on Market	+0.0037
 
 Conclusion:
 
-Location influences price far more than property features.
+Location drives pricing far more than structural property features.
 
 Market Segmentation
-Segment	Price Range	Listings	Conversion
+
+Properties were divided into four price segments.
+
+Segment	Price Range	Listings	Conversion Rate
 Budget	< $470K	750	33.3%
 Mid-Range	$470K – $816K	750	35.7%
 Upper-Mid	$816K – $1.16M	750	33.1%
 Luxury	> $1.16M	750	37.2%
 
-Highest demand segment: Luxury
+Key finding:
 
-Power BI Dashboard Design
+Luxury properties have the highest conversion rate and fastest sales cycle.
 
-The project includes a recommended 5-page Power BI dashboard.
+Visualizations
+
+The project includes 20 professional visualizations.
+
+Key charts include:
+
+Property status distribution
+
+Property type demand
+
+Price distribution
+
+Days on market analysis
+
+Price vs area relationship
+
+Feature correlation heatmap
+
+Market segmentation performance
+
+City-level performance comparison
+
+These visualizations help identify pricing patterns and market demand dynamics.
+
+Power BI Dashboard
+
+A 5-page interactive dashboard was designed for business stakeholders.
 
 Page 1 – Market Overview
 
-KPI Cards
+Total Listings
+
+Average Price
 
 Status Distribution
-
-Property Type Mix
 
 Listings by City
 
@@ -291,91 +172,150 @@ Price by Property Type
 
 Price vs Area
 
-Correlation Heatmap
-
 Page 3 – Sales Performance
 
 Days on Market by City
 
-Sell Through Rate by Segment
+Conversion Rate by Segment
 
-City Performance Matrix
+Market Demand Indicators
 
 Page 4 – Property Characteristics
 
-Price vs Bedrooms
+Bedrooms vs Price
 
-Price vs Bathrooms
+Bathrooms vs Price
 
-Year Built vs Price
+Year Built Trends
 
-Page 5 – Segment Deep Dive
+Page 5 – Market Segmentation
 
-Segment Sales Performance
+Segment Performance
 
-Segment Composition
+Segment Distribution by City
 
-Segment KPI Cards
+Segment KPIs
 
-Stakeholder Insights
-For Real Estate Investors
+Project Structure
+real-estate-market-analysis
+│
+├── data
+│   ├── df_clean.csv
+│   └── df_with_features.csv
+│
+├── visuals
+│   ├── Real_Estate_Dashboard.png
+│   ├── Detailed_Market_Analysis.png
+│   └── Price_Segmentation_Analysis.png
+│
+├── reports
+│   └── Real_Estate_Analysis_Report.docx
+│
+├── notebooks
+│   └── analysis.ipynb
+│
+└── README.md
+Tech Stack
 
-Invest in mid-range segment ($470K–$816K)
+Programming
 
-Best liquidity and return balance
+Python 3.12
 
-San Francisco offers fastest exits
+Libraries
 
-Fresno offers highest price potential
+Pandas
 
-For Real Estate Companies
+NumPy
 
-Focus pricing models on location
+SciPy
 
-Allocate marketing budget to luxury segment
+Matplotlib
 
-Maintain diversified property portfolios
+Seaborn
 
-For Mortgage Service Providers
+Scikit-learn
 
-Location-based risk modeling
+Visualization
 
-Develop premium mortgage products
+Power BI
 
-Market shows stable liquidity
+Matplotlib
 
-For Real Estate Appraisers
+Seaborn
 
-Location dominates valuation models
+Tools
 
-Price-per-square-foot shows high variance
+Jupyter Notebook
 
-Luxury homes sell faster than expected
+VS Code
 
-Technical Details
-Category	Tools
-Language	Python 3.12
-Libraries	Pandas, NumPy, SciPy
-Visualization	Matplotlib, Seaborn
-ML Tools	Scikit-learn
-File Format	CSV
-Visualization Format	PNG (200 DPI)
-Project Statistics
-Metric	Value
-Records Analyzed	3,000
-Columns	15 original / 23 processed
-Analytical Dimensions	10
-Visualizations	20
-Insights Generated	16
-Dashboard Pages	5
-Report Length	15+ pages
+GitHub
 
+Key Findings
+Market Structure
 
+The real estate market is balanced and stable.
+
+Property listings are evenly distributed across cities.
+
+Pricing Patterns
+
+Price distribution is almost symmetric.
+
+Price per square foot shows large variance, indicating pricing inefficiencies.
+
+Demand Trends
+
+Luxury segment shows highest demand.
+
+Mid-range properties show strong liquidity.
+
+Business Impact
+
+This analysis helps:
+
+Real Estate Investors
+
+Identify high-performing investment segments
+
+Optimize geographic investment strategies
+
+Real Estate Companies
+
+Improve pricing strategies
+
+Optimize marketing allocation
+
+Mortgage Service Providers
+
+Improve loan risk models
+
+Design targeted mortgage products
+
+Real Estate Appraisers
+
+Improve valuation methodologies
+
+Identify price-per-square-foot anomalies
 
 Author
 
 Harsh Chandrakant Immadi
-harshimmadi18@gmail.com
 
+B.Tech Computer Science Engineering (2026)
 
+Technical Skills:
 
+Python
+
+Machine Learning
+
+Data Analysis
+
+Power BI
+
+SQL
+
+Data Visualization
+
+Git & GitHub
